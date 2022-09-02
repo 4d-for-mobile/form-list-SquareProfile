@@ -13,19 +13,18 @@
     <!-- Generated with list form template named "Square Profile List" -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        style="@style/Theme.QMobileApp.Custom.Background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <androidx.cardview.widget.CardView
-            style="@style/Theme.QMobileApp.Card.Background.Alt1"
+        <com.google.android.material.card.MaterialCardView
+            style="?materialCardViewFilledStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            app:cardCornerRadius="25dp"
+            app:cardBackgroundColor="?colorSurfaceVariant"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +36,7 @@
 
                 <!-- START EDITING HERE -->
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
                     android:id="@+id/cardView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -54,7 +53,7 @@
                         app:imageUrl="___IMAGE_1___"
                         tools:background="@tools:sample/avatars" />
 
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
                 <TextView
                     android:id="@+id/___SPECIFIC_ID_2___"
@@ -66,7 +65,8 @@
                     android:layout_marginBottom="6dp"
                     android:scrollbars="none"
                     android:text="___TEXT_2___"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                    android:textColor="?colorOnSurface"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@+id/___SPECIFIC_ID_3___"
                     app:layout_constraintStart_toEndOf="@+id/cardView"
@@ -83,7 +83,8 @@
                     android:layout_marginBottom="50dp"
                     android:scrollbars="none"
                     android:text="___TEXT_3___"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                    android:textColor="?colorOnSurface"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/cardView"
                     app:layout_constraintTop_toBottomOf="@+id/___SPECIFIC_ID_2___"
@@ -91,7 +92,7 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
